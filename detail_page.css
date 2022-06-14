@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*카테고리*/
+
+
+
+
+nav{
+    position: fixed;
+    height: 62px;
+    width: 100%;
+    box-shadow : 0 4px 20px rgba(0, 0, 0, 0.1) ;
+    background-color: white;
+
+}
+
+.big-header{
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    box-shadow : 0 4px 20px rgba(0, 0, 0, 0.1) ;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #A7A7A7;
+    transition: 0.3s;
+}
+
+a:hover{
+    transition: 0.5s;
+    font-weight: 700;
+    color: #1A1A1A;
+}
+
+li{
+    list-style: none;
+}
+
+.min-header{
+    height: 60px;
+    min-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.side-header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-right: 30px;  
+  }
+
+
+
+
+
+  /*소개페이지*/
+
+ .page1{
+      height: 200px;
+      background-color: #FA921C;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+  }
+
+.intro h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 12px;
+    color: white;
+}
+
+.intro h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+}
+
+
+
+/*이전으로*/
+
+.boutten{
+    height: 80px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+h5{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1A1A1A;
+
+}
+
+
+
+/*잡지*/
+#frame {
+    
+    top: 280px;
+    left: 1220px;
+    width: 400px;
+    height: 600px;
+    transition: transform 200ms;
+    margin: auto;
+    padding-top: 100px;
+}
+
+#frame: hover{
+    transform: scale3d(1.05,1.05,1.05);
+}
+#card {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url("https://i.postimg.cc/yNH0MLpG/image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    /* position: relative; */
+    transition-duration: 250ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+#light {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+
+/*제목*/
+
+.title{
+    width: 800px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    border-top: 2px solid #1A1A1A;
+}
+
+.title h2{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    padding-bottom: 12px;
+    color: #1A1A1A;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.title h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 12px;
+    color: #FA921C;
+    text-align: center;
+    padding-top: 4px
+}
+
+
+
+
+/*설명*/
+.serve{
+    width: 1120px;
+    height: 240px;
+    margin: auto;
+
+}
+
+P{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 12px;
+    color: #1A1A1A;
+    line-height: 2;
+}
+
+
+/*상세컷*/
+
+
+.sub_title h1{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 32px;
+    font-weight:700;
+    padding-bottom: 12px;
+    color: #1A1A1A;
+    text-align: center;
+    padding-top: 120px;
+}
+
+
+
+
+section.content{
+    display: flex;
+    justify-content: center;
+
+}
+
+section.content div.image img {
+    width: 100%;
+    margin: auto;
+} 
+
+@keyframes fadeIn{
+    from{
+      opacity: 0;
+      transform: translateX(-20px);
+      color: var(--sky-blue);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+      color: #white;
+    }
+}
+  
+
+@media (max-width: 776px){
+
+    section.content{
+        display: flex;
+        margin: 120px 48px;
+        flex-wrap: wrap;
+    }
+
+    section:nth-child(odd){
+        flex-direction: row;
+    }
+
+    section.content div.info{
+        margin-left: 0;
+    }
+
+    section.content div.info h3{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    
+    section.content div.info p{
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+}
+
+
+/*풋터*/
+footer{
+    background-color: #1A1A1A;
+}
+
+h6{
+    max-width: 600px;
+    word-break: keep-all;
+    font-size: 14px;
+    font-weight: 400;
+
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-left: 50px;
+    line-height: 2;
+
+
+}
+
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    margin-left: 160px;
+    padding-top: 28px;
+}
+
+.second{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: #A7A7A7;
+    margin-left: 20px;
+    margin-left: 160px;
+    margin-top: 28px;
+    padding-bottom: 28px;
+}
+
+.second a{
+    float: left;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+
+
+
